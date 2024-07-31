@@ -39,7 +39,7 @@ function Form() {
           );
           const data = await res.json();
 
-          if (!data.country)
+          if (!data.countryCode)
             throw new Error(
               "That doesn't seem to be a city. Click somewhere else 😉"
             );
